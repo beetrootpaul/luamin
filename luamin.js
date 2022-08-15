@@ -426,7 +426,7 @@
 	var formatStatementList = function(body) {
 		var result = '';
 		each(body, function(statement) {
-			result = joinStatements(result, formatStatement(statement), ';');
+			result = joinStatements(result, formatStatement(statement), '\n');
 		});
 		return result;
 	};
