@@ -206,7 +206,7 @@
 			// e.g. `1.` + `print`
 			return a + separator + b;
 		}
-		return a + b;
+		return a + separator + b;
 	};
 
 	var formatBase = function(base) {
