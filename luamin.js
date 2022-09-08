@@ -295,7 +295,12 @@
 					associativity != options.direction &&
 					options.parent != '+' &&
 					!(options.parent == '*' && (operator == '/' || operator == '*'))
-				)
+				) ||
+				operator == '&' ||
+				operator == '|' ||
+				operator == '^^' ||
+				operator == '<<' ||
+				operator == '>>'
 			) {
 				// The most simple case here is that of
 				// protecting the parentheses on the RHS of
